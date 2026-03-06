@@ -1,1 +1,47 @@
-{}
+{
+  "account_id": "bens-electric",
+  "company_name": "Ben's Electric Solutions",
+
+  "business_hours": {
+    "days": "unknown",
+    "start": "unknown",
+    "end": "unknown",
+    "timezone": "unknown"
+  },
+
+  "services_supported": [
+    "electrical service"
+  ],
+
+  "emergency_definition": [
+    "Electrical emergency reported by G&M Pressure Washing"
+  ],
+
+  "emergency_routing_rules": {
+    "priority_client": "G&M Pressure Washing",
+    "route_to": "Ben",
+    "phone_number": "403-870-8494"
+  },
+
+  "non_emergency_routing_rules": {
+    "after_hours": "Collect caller details and follow up next business day"
+  },
+
+  "call_transfer_rules": {
+    "timeout_seconds": 60,
+    "retry_attempts": 1
+  },
+
+  "integration_constraints": [],
+
+  "after_hours_flow_summary": "Emergency calls from G&M Pressure Washing transferred directly to Ben.",
+
+  "office_hours_flow_summary": "Collect caller info and route request.",
+
+  "questions_or_unknowns": [
+    "Business hours",
+    "Office address"
+  ],
+
+  "notes": "Email and SMS notifications enabled."
+}
